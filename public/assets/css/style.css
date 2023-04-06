@@ -1,12 +1,79 @@
-.bg-img {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: .5;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("https://picsum.photos/800/450");
+/* Mobile styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
+
+header {
+  background-color: #5a1ceb;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.weather,
+.outfit {
+  margin-bottom: 20px;
+}
+
+.weather h2,
+.outfit h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type="submit"],
+button#get-outfit-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.weather-info,
+.outfit-info {
+  margin-bottom: 10px;
+}
+
+.weather-info p,
+.outfit-info p {
+  margin: 0;
+}
+
+.weather-info p strong,
+.outfit-info p strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Tablet and desktop styles */

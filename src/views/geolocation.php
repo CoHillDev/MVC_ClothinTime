@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Clothin Time - Weather!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\public\assets\css\style.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                 <input type="text" id="city" name="city" required>
                 <button type="submit">gO !</button>
             </form>
-            <div class="weather-info">
+            <!-- <div class="weather-info">
                 <p><strong>Température :</strong> <span id="temperature"></span></p>
                 <p><strong>Conditions :</strong> <span id="conditions"></span></p>
             </div>
@@ -34,15 +34,13 @@
                 <p><strong>Bas :</strong> <span id="bottom"></span></p>
                 <p><strong>Chaussures :</strong> <span id="shoes"></span></p>
             </div>
-            <button id="get-outfit-btn">Outfit Toi mon gars !</button>
+            <button id="get-outfit-btn">Outfit Toi meuf !</button>
         </section>
-    </main>
+    </main> -->
 
-    <footer>
-        <p>&copy; Clothin Time 2023</p>
-    </footer>
+            <?php include 'footer.php'; ?>
 
-    <script src="script.php"></script>
+            <script src="script.php"></script>
 </body>
 
 </html>
