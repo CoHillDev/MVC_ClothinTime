@@ -7,5 +7,3 @@ CREATE TABLE users (
 
 INSERT INTO users (email, password)
 VALUES ('test@email.com', 'clothintime');
-
-
