@@ -1,19 +1,26 @@
 {% extends 'Layout/column.html.twig' %}
 
-{% block title %}Simple MVC | Workshop WCS{% endblock %}
+{# Héritage du layout.html.twig #}
+
+{% block title %}Clothin Time
+{% endblock %}
 {% block content %}
-    <div class="text-center bg-light p-5">
-        <h1>Workshop Simple MVC</h1>
-        <p>Connect a user from database into PHP session</p>
-        {% if user %}
-            🥳
-            <p>
-                You are connected as <strong>{{ user.pseudo }}</strong>!
-            </p>
-            <a href="/logout"><i class="bi bi-box-arrow-right"></i> Logout</a>.
-        {% else %}
-            <a href="/login">Go to login page</a>
-            or <a href="/register">register an account</a>.
-        {% endif %}
-    </div>
+	<div class="Welcome">
+		<h1>Welcome you !</h1>
+		<h2>This is quite a useful thingy that gives the weather, but a very special one, just for you ;)</h2>
+		{% if user %}
+			🥳
+			<p>
+				You are connected as
+				<strong>{{ user.pseudo }}</strong>!
+			</p>
+			<a href="/logout">
+				<i class="bi bi-box-arrow-right"></i>
+				Logout</a>.
+		{% else %}
+			<a href="/login">Go to Login</a>
+			or
+			<a href="/register">Register an account</a>
+		{% endif %}
+	</div>
 {% endblock %}

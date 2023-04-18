@@ -1,76 +1,86 @@
+/* added css */
+
+a,
+p {
+    color: rgb(165, 5, 88);
+    content: none;
+    text-decoration: none;
+}
+
+i,
+.nav-link {
+    color: rgb(167, 221, 255);
+}
+
+header {
+    background: transparent;
+    padding: 20px;
+}
+/* Styles for the links in the header */
+
+.header-links {
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+    color: #e99498;
+}
+
+.Welcome {
+    padding: 5%;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: oblique;
+    color: rgb(244, 121, 170);
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     font-size: 16px;
     text-align: center;
-  }
-  
-  header {
-    background-color: #5a1ceb;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .weather,
-  .outfit {
-    margin-bottom: 20px;
-  }
-  
-  .weather h2,
-  .outfit h2 {
-    margin-top: 0;
-  }
-  
-  form {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-  }
-  
-  button[type="submit"],
-  button#get-outfit-btn {
+    text-decoration: none;
+
+    /* background-image: url(""); */
+    background-image: url("../images/background_2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input {
+    text-align: center;
+}
+
+button[type="submit"] {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 40px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .weather-info,
-  .outfit-info {
+}
+
+form {
     margin-bottom: 10px;
-  }
-  
-  .weather-info p,
-  .outfit-info p {
-    margin: 0;
-  }
-  
-  .weather-info p strong,
-  .outfit-info p strong {
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
+}
+
+/* Styles for the footer */
+footer-link {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
