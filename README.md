@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository is a simple PHP MVC structure from scratch, developped t create Clothin Time app.
+This repository is a simple PHP MVC structure from scratch, modified to create Clothin Time app.
 
 ## Steps
 
