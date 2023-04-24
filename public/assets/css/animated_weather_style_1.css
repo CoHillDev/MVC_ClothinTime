@@ -929,29 +929,3 @@
             #eeeeee 110px 45px, #eeeeee 90px 35px;
     }
 }
-
-.container {
-    background: linear-gradient(
-        left,
-        #00bbff,
-        #00bbff 14.3%,
-        #2eb5e5 14.3%,
-        #2eb5e5 28.6%,
-        #e6e6e6 28.6%,
-        #e6e6e6 42.9%,
-        #f3d166 42.9%,
-        #f3d166 57.2%,
-        #222233 57.2%,
-        #222233 71.5%,
-        #444444 71.5%,
-        #444444 85.8%,
-        #85db8c 85.8%
-    );
-    transform: scale(0.9);
-    width: 1200px;
-    position: absolute;
-    height: 210px;
-    left: 50%;
-    top: 50%;
-    margin: -65px -600px;
-}

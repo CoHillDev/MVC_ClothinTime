@@ -2,14 +2,14 @@
 
 a,
 p {
-    color: rgb(165, 5, 88);
+    color: #9a05a5;
     content: none;
     text-decoration: none;
 }
 
 i,
 .nav-link {
-    color: rgb(167, 221, 255);
+    color: #cbe2f1;
 }
 
 header {
@@ -40,8 +40,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    font-style: oblique;
-    color: rgb(244, 121, 170);
+    color: #ff00d9;
 }
 
 body {
@@ -65,13 +64,16 @@ input {
     text-align: center;
 }
 
-button[type="submit"] {
-    background-color: #333;
+button[type="submit"],
+.button {
+    background-color: #ff00d9;
     color: #fff;
     border: none;
-    padding: 5px 40px;
+    padding: 10px 40px;
     font-size: 16px;
     cursor: pointer;
+
+    border-radius: 0.5rem;
 }
 
 form {
@@ -83,4 +85,5 @@ footer-link {
     padding: 10px;
     text-align: center;
     font-style: italic;
+    background: transparent;
 }

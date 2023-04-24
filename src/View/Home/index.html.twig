@@ -1,22 +1,29 @@
 {% extends 'Layout/column.html.twig' %}
 
-{# Héritage du layout.html.twig #}
-
 {% block title %}Clothin Time
 {% endblock %}
+
+
 {% block content %}
 	<div class="Welcome">
-		<h1>Welcome you !</h1>
-		<h2>This is quite a useful thingy that gives the weather, but a very special one, just for you ;)</h2>
+		{% if not user %}
+		<h1>Welcome, time to get the weather, right ?!</h1>
+			<h2>This app is a very original thingy that just gives the weather... (a very special one, just for you ;)</h2>
+		{% endif %}
 		{% if user %}
-			🥳
-			<p>
-				You are connected as
-				<strong>{{ user.pseudo }}</strong>!
-			</p>
+			<h2>
+				Hello
+				<strong>{{ user.pseudo }}</strong> 🥳 !
+			</h2>
+			
+			{# <a href="/weather/show" class="button">My Weather</a> #}
+
+			{% include 'Weather/_form.html.twig' %}
+
 			<a href="/logout">
 				<i class="bi bi-box-arrow-right"></i>
-				Logout</a>.
+				Logout</a>
+
 		{% else %}
 			<a href="/login">Go to Login</a>
 			or
