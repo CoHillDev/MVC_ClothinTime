@@ -44,9 +44,8 @@ class WeatherManager extends AbstractManager
                 if (array_key_exists($weather_desc, $images)) {
                     $data->description = $images[$weather_desc];
                 } else {
-                    $data->description = "windy.webp";
+                    $data->description = "very.cold.jpg";
                 }
-                $data->description = $weather_desc;
                 return $data;
             } else {
                 // Gestion des erreurs

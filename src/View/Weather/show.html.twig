@@ -2,16 +2,18 @@
 
 {% block content %}
 
-{% include 'Weather/_form.html.twig' %}
-
 {% if weatherData %}
     <h1>Here is the weather in {{ weatherData.name }}, {{ weatherData.sys.country }}</h1>
 
-    <img src="{{ 'assets/images/weather/' ~ weatherData.description }}">
-    <img src="{{ weatherData.weather[0].icon_url }}">
+    <img class="memes" src="{{ '/assets/images/weather/' ~ weatherData.description }}">
+    <img class="memes" src="{{ weatherData.weather[0].icon_url }}">
 
     <p>Description : {{ weatherData.weather[0].description }}</p> 
     <p>Temperature : {{ weatherData.main.temp }}°C</p>
+
+    {% else %}
+
+{% include 'Weather/_form.html.twig' %}
 
 {% endif %}
 

@@ -2,12 +2,12 @@
         {% if error %}
         <p class="text-danger">{{error}}</p>
         {% endif %}
-            <form method="get" action="weather/show">
+            <form method="get" action="/weather/show">
 			<div class="mb-3">
                 <label for="city">Where are you located today ?</label>
                 <input type="text" id="city" class="form-control" name="city" required>
 			</div>
-            <button type="submit" class="btn btn-success">Get Weather</button>
+            <button type="submit" class="btn btn-light">Get Weather</button>
             </form>
 
             {# {<pre>
