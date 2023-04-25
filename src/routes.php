@@ -12,5 +12,6 @@ return [
     'login' => ['UserController', 'login',],
     'logout' => ['UserController', 'logout',],
     'register' => ['UserController', 'register',],
+    'edit/id' => ['UserController', 'edit'],
     'weather/show' => ['WeatherController', 'show', ['city']],
 ];

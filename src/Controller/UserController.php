@@ -90,4 +90,40 @@ class UserController extends AbstractController
             'errors' => $errors
         ]);
     }
+
+    public function edit(int $id)
+    {
+        $errors = [];
+        $userManager = new UserManager();
+        $user = $userManager->selectOneById($id);
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $credentials = $_POST;
+
+            // Validate the form data
+            if (empty($credentials['email'])) {
+                $errors[] = 'Email is required';
+            }
+            if (empty($credentials['password'])) {
+                $errors[] = 'Password is required';
+            }
+            if (empty($credentials['pseudo'])) {
+                $errors[] = 'Pseudo is required';
+            }
+            if (empty($credentials['firstname'])) {
+                $errors[] = 'Firstname is required';
+            }
+            if (empty($credentials['lastname'])) {
+                $errors[] = 'Lastname is required';
+            }
+
+            // If there are no errors, update the user
+            if (empty($errors)) {
+                $userManager->update($id, $credentials);
+                return $this->twig->render('User/show.html.twig', ['user' => $userManager->selectOneById($id)]);
+            }
+        }
+
+        return $this->twig->render('User/edit.html.twig', ['user' => $user]);
+    }
 }

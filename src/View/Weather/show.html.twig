@@ -9,7 +9,7 @@
     <img class="memes" src="{{ weatherData.weather[0].icon_url }}">
 
     <p>Description : {{ weatherData.weather[0].description }}</p> 
-    <p>Temperature : {{ weatherData.main.temp }}°C</p>
+    <p>Temperature : {{ weatherData.main.temp|round }}°C</p>
 
     {% else %}
 
