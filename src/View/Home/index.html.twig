@@ -5,10 +5,11 @@
 
 
 {% block content %}
-	<div class="Welcome">
+	<div >
 		{% if not user %}
-		<h1>Welcome, time to get the weather, right ?!</h1>
-			<h2>This app is a very original thingy that just gives the weather... (a very special one, just for you ;)</h2>
+		<h1 class="Welcome">Welcome !</h1>
+			<h2>Time to get the weather, right ?!</h2>
+			{# <p class="desc">This app is a very original thingy that just gives the weather... (but a very special one, just for you ;)</p> #}
 		{% endif %}
 		{% if user %}
 			<h2>
