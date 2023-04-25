@@ -50,9 +50,20 @@ h1 {
     color: #ffffff;
 }
 
+.city-weather {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.enjoy {
+    font-size: 24px;
+    font-family: "Pacifico", cursive;
+    color: #cbe2f1;
+}
+
 h2 {
     font-size: 24px;
-    color: #9a05a5;
+    color: #940375;
     font-family: "Pacifico", cursive;
 }
 
@@ -110,12 +121,10 @@ form {
 }
 
 .memes {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
     /* border-radius: 2rem;*/
-    width: 200px;
-    border: none;
-    -moz-border-radius: 75px;
-    -webkit-border-radius: 75px;
-    border-radius: 75px;
 }
 
 /* Styles for the footer */

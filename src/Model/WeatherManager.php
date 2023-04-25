@@ -30,21 +30,21 @@ class WeatherManager extends AbstractManager
 
                 // Associer chaque description météo à une image correspondante
                 $images = array(
-                    "clear sky" => "sun.webp",
-                    "few clouds" => "scattered-clouds.webp",
-                    "scattered clouds" => "sunny.jpg",
-                    "broken clouds" => "broken-clouds.jpg",
-                    "shower rain" => "rainy.jpg",
-                    "rain" => "rainy.webp",
-                    "thunderstorm" => "thunder.png",
-                    "snow" => "very.cold.1.png",
-                    "mist" => "mist.jpeg"
+                    "clear sky" => "good.gif",
+                    "few clouds" => "few-clouds-gif",
+                    "scattered clouds" => "scattered-clouds.gif",
+                    "broken clouds" => "broken-clouds.gif",
+                    "shower rain" => "shower-rain.gif",
+                    "rain" => "rain.gif",
+                    "thunderstorm" => "thunderstorm.gif",
+                    "snow" => "snow-style.gif",
+                    "mist" => "mist.gif"
                 );
                 // Si la description météo n'est pas incluse dans le tableau $images, utiliser une image par défaut
                 if (array_key_exists($weather_desc, $images)) {
                     $data->description = $images[$weather_desc];
                 } else {
-                    $data->description = "very.cold.jpg";
+                    $data->description = "bleu-jeans.gif";
                 }
                 return $data;
             } else {

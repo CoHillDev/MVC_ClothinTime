@@ -3,13 +3,14 @@
 {% block content %}
 
 {% if weatherData %}
-    <h1>Here is the weather in {{ weatherData.name }}, {{ weatherData.sys.country }}</h1>
+    <h2 class="city-weather">Well, the weather in {{ weatherData.name }}, {{ weatherData.sys.country }} 🥁</h2>
+
+    <h2>is {{ weatherData.weather[0].description }} : {{ weatherData.main.temp|round }}°C feeling style</h2> 
 
     <img class="memes" src="{{ '/assets/images/weather/' ~ weatherData.description }}">
     <img class="memes" src="{{ weatherData.weather[0].icon_url }}">
-
-    <p>Description : {{ weatherData.weather[0].description }}</p> 
-    <p>Temperature : {{ weatherData.main.temp|round }}°C</p>
+    
+    <p class="enjoy"> Enjoy your day 😘</p>
 
     {% else %}
 
