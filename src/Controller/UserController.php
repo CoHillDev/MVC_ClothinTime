@@ -122,7 +122,7 @@ class UserController extends AbstractController
             // If there are no errors, update the user
             if (empty($errors)) {
                 $userManager->update($user['id'], $credentials);
-                header('Location: /weather/show');
+                header('Location: /');
                 exit();
             }
         }

@@ -30,11 +30,11 @@ class WeatherManager extends AbstractManager
 
                 // Associer chaque description météo à une image correspondante
                 $images = array(
-                    "clear sky" => "good.gif",
+                    "clear sky" => "bleu-jeans.gif",
                     "few clouds" => "few-clouds.gif",
                     "scattered clouds" => "scattered-clouds.gif",
                     "broken clouds" => "broken-clouds.gif",
-                    "overcast clouds" => "bleu-jeans.gif",
+                    "overcast clouds" => "cold.gif",
                     "shower rain" => "shower-rain.gif",
                     "rain" => "rain.gif",
                     "moderate rain" => "rain.gif",

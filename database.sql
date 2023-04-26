@@ -15,50 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Structure de la table `item`
---
-DROP TABLE IF EXISTS `item`;
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `item`
---
-
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
---
--- Table structure for table `user`
---
-
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
