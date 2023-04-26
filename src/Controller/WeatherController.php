@@ -27,7 +27,8 @@ class WeatherController extends AbstractController
         } catch (Exception $e) {
             $error = $e->getMessage();
         }
-        return $this->twig->render('Weather/show.html.twig', ['weatherData' => $data, 'error' => $error]);
+
+        return $this->twig->render('Weather/show.html.twig', ['weatherData' => $data, 'error' => $error, 'requestedCity' => $city]);
     }
 }
 

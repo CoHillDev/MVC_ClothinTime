@@ -5,8 +5,8 @@
             <form method="get" action="/weather/show">
 			<div class="mb-3">
                 <label for="city">Where are you located today ?</label>
-                {% set city = user.city ?? '' %}
-                <input type="text" id="city" class="form-control" name="city" required placeholder="Enter your city"  value="{{ city }}"> 
+                {# {% set city = user.city ?? '' %} #}
+                <input type="text" id="city" class="form-control" name="city" required placeholder="Enter your city"  value="{{ requestedCity ?? user.city ?? '' }}"> 
 			</div>
             <button type="submit" class="btn btn-light">Get Weather</button>
             </form>

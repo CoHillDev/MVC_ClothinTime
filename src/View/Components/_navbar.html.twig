@@ -1,9 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-grey bg-grey">
+<header>
+
+<nav class="navbar navbar-expand navbar-grey bg-grey shadow-0">
 	<div class="container-fluid">
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		{# <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		</button> #}
+		<div class="navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav w-100">
 				<li class="nav-item">
 					<a class="nav-link" href="/">
@@ -12,7 +14,7 @@
 				</li>
 				{% if user %}
 					<li class="nav-item dropdown ms-auto">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
 							<i class="bi bi-person-circle"></i>
 							{{ user.pseudo }}
 						</a>
@@ -44,3 +46,5 @@
 		</div>
 	</div>
 </nav>
+
+</header>

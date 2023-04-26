@@ -34,11 +34,11 @@ class UserManager extends AbstractManager
     public function update(int $id, array $credentials): bool
     {
         $statement = $this->pdo->prepare("UPDATE " . static::TABLE . "
-            SET email = :email, password = :password, pseudo = :pseudo, firstname = :firstname, lastname = :lastname, city = :city
+            SET email = :email, pseudo = :pseudo, firstname = :firstname, lastname = :lastname, city = :city
             WHERE id = :id");
         $statement->bindValue(':id', $id, \PDO::PARAM_INT);
         $statement->bindValue(':email', $credentials['email']);
-        $statement->bindValue(':password', password_hash($credentials['password'], PASSWORD_DEFAULT));
+        // $statement->bindValue(':password', password_hash($credentials['password'], PASSWORD_DEFAULT));
         $statement->bindValue(':pseudo', $credentials['pseudo']);
         $statement->bindValue(':firstname', $credentials['firstname']);
         $statement->bindValue(':lastname', $credentials['lastname']);

@@ -91,11 +91,11 @@ class UserController extends AbstractController
         ]);
     }
 
-    public function edit(int $id)
+    public function edit()
     {
         $errors = [];
         $userManager = new UserManager();
-        $user = $userManager->selectOneById($id);
+        $user = $userManager->selectOneById($_SESSION['user_id']);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $credentials = $_POST;
@@ -104,9 +104,9 @@ class UserController extends AbstractController
             if (empty($credentials['email'])) {
                 $errors[] = 'Email is required';
             }
-            if (empty($credentials['password'])) {
-                $errors[] = 'Password is required';
-            }
+            // if (empty($credentials['password'])) {
+            //     $errors[] = 'Password is required';
+            // }
             if (empty($credentials['pseudo'])) {
                 $errors[] = 'Pseudo is required';
             }
@@ -116,11 +116,14 @@ class UserController extends AbstractController
             if (empty($credentials['lastname'])) {
                 $errors[] = 'Lastname is required';
             }
+            // var_dump($errors);
+            // die;
 
             // If there are no errors, update the user
             if (empty($errors)) {
-                $userManager->update($id, $credentials);
-                return $this->twig->render('User/show.html.twig', ['user' => $userManager->selectOneById($id)]);
+                $userManager->update($user['id'], $credentials);
+                header('Location: /weather/show');
+                exit();
             }
         }
 

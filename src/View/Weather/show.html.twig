@@ -1,6 +1,6 @@
 {% extends 'Layout/column.html.twig' %}
 
-{% block content %}
+{% block main %}
 
 {% if weatherData %}
     <h2 class="city-weather">Well, the weather in {{ weatherData.name }}, {{ weatherData.sys.country }} 🥁</h2>
@@ -11,12 +11,12 @@
     <img class="memes" src="{{ weatherData.weather[0].icon_url }}">
     
     <p class="enjoy"> Enjoy your day 😘</p>
-
-    {% else %}
-
-{% include 'Weather/_form.html.twig' %}
+{# 
+    {% else %} #}
 
 {% endif %}
+
+{% include 'Weather/_form.html.twig' %}
 
 {% if error %}
     <p>{{ error }}</p>
